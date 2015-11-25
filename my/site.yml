@@ -1,0 +1,13 @@
+---
+
+- name: install
+  remote_user: "{{ ansible_user }}"
+  hosts: target
+
+  roles:
+      - bash
+      - common-packages
+      - developer-packages
+      - sbt
+      - vim
+      - zsh
